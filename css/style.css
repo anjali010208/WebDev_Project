@@ -1,0 +1,762 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 20px;
+}
+
+.nav-name{
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 0 3px 20px red,
+    0 0 20px red,
+    0 0 10px orange,
+    4px -5px 6px yellow,
+   -4px -10px 10px yellow,
+    0 -10px 30px yellow;
+    animation: 1s heading infinite alternate linear;
+}
+
+@keyframes heading {
+    0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow; }
+    25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+      0 0 20px orange,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow; }
+    50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 -5px 10px orange,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow,
+      2px -20px 30px rgba(255,255,0,0.5); }
+    75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 -5px 10px orange,
+      3px -5px 5px yellow,
+      -4px -10px 10px yellow,
+      2px -20px 30px rgba(255,255,0,0.5),
+      0px -25px 40px rgba(255,255,0,0)}
+    100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow; }
+  }
+
+
+a{
+    color:#e60000;
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+button{
+    font-family: inherit;
+    outline : none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: auto 0;
+}
+
+.btn{
+    background-color : #cca300;
+    border: seashell;
+    margin: 0 auto;
+    border-style: ridge;
+    color: oldlace;
+    padding: 5px;
+    text-align: center;
+    display : block;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.nav-item button{
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: darkolivegreen;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.section{
+    padding : 5rem;
+}
+
+.para-text{
+    color: black;
+    line-height: 1.7;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0px;
+    background: #fff;
+}
+
+.nav-title{
+    display: block;
+    padding: 0px;
+    text-align: center ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-bar{
+    border : none;
+    background : transparent;
+    font-size : 20px;
+    color : darkslategrey;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.nav-link{
+    font-size: 27px;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+
+.nav-bar:hover, .nav-link:hover{
+    color: #ff9900;
+}
+
+.nav-list{
+    margin : auto;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.nav-item{
+    padding : 20px;
+    text-align: center;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.dot span{
+    color:red;
+    font-size: 30px!important;
+}
+
+.box{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+.box h1{
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: -4px;
+    color: #ffbf00; 
+}
+
+.box p{
+    font-size: 40px;
+}
+
+.box h3{
+    font-style: oblique;
+    font-size: 40px;
+}
+
+
+.title{
+    padding: 0.2rem;
+}
+.title h2{
+    font-family: 'Dancing Script'!important;
+    font-style: normal;
+    font-weight: 700;
+    color: #fabd06; 
+    opacity: 1;
+    font-size: 50px;
+    padding-bottom: 10px;
+    padding-top: -20px;
+}
+.title h4{
+    opacity: 0.9;
+    text-transform: capitalize;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.about{
+    overflow-x: hidden;
+}
+
+.menu
+{
+    background: rgb(233, 231, 231);
+}
+.menu.section{
+    padding-bottom: 0;
+}
+.menu .title{
+    text-align: center;
+    padding-top: -20px;
+    padding-bottom: -20px;
+}
+.menu-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.menu-heading{
+    padding-bottom: 30px;
+    padding-top: 40px;
+    margin-left: 30px;
+    opacity: 0.8;
+}
+.menu-content li{
+    display: inline-block;
+}
+.menu-content li a{
+    border-radius: 0;
+    color: black;
+    opacity: 0.8;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: all 0.5s;
+}
+.menu-content li a:hover{
+  color:  #009900;
+}
+.menu-item{
+    position: relative;
+    cursor: pointer;
+}
+.menu-over{
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.menu-overcontent{
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+}
+.menu-overcontent div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-overcontent h2{
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.menu-item:hover .menu-over{
+    opacity: 1;
+}
+.menu-item:hover .menu-overcontent{
+    transform: translateY(0);
+}
+
+
+.reservation{
+    background: rgb(99, 41, 41);
+}
+.reservation-left .title{
+    text-align: left;
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    color: #fabd06; 
+    margin-top: -60px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+.reserve{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.reservation-left {
+    display: inline;
+    float: left; 
+    margin-top: 30px;
+    margin-left: 178px;
+    width: 100%;
+}
+input{
+    width: 70%;
+    border: 3px solid #cca300;
+}
+.reservation-form .form-control {
+    margin-bottom: 20px;
+}
+.reservation-form input[type="text"],
+.reservation-form input[type="email"] {
+  border-radius: 0;
+  color: #000;
+  height: 40px;
+}
+.reservation-form input[type="text"]:focus,
+.reservation-form input[type="email"]:focus {
+  box-shadow: none;
+}
+.reservation-form select {
+  border-radius: 0;
+  height: 40px;
+}
+.reservation-form select:focus {
+  box-shadow: none;
+} 
+.reservation-form select option {
+  margin-bottom: 10px;
+  color: #000;
+}
+.reservation-form textarea {
+  border-radius: 0;
+  color: #000;
+  padding: 10px;
+}
+.reservation-form textarea:focus {
+  box-shadow: none;
+}  
+.reservation-form button[type="submit"] {
+  margin-top: 20px;
+  margin-left: 15px;
+  height: 40px;
+}
+.star::after {
+    content:"*"; 
+    font-size: 30px; 
+    color: rgb(245, 32, 12);
+    position: absolute; 
+    margin-bottom: 10px; 
+    padding-right: 10px; 
+}
+
+.reserve-btn{
+    background-color : #cca300;
+    border: seashell;
+    margin: 0 auto;
+    border-style: ridge;
+    color: oldlace;
+    padding: 5px;
+    text-align: center;
+    display : block;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.reserve-btn:hover{
+    background-color: darkolivegreen;
+}
+select{
+    width: 70%;
+    border: 3px solid #cca300;
+    color: #555;
+}
+textarea{
+    width: 70%;
+    border: 3px solid #cca300;
+}
+
+.reservation-right {
+    background-color: rgb(218, 231, 171);
+    display: inline;
+    float: left;
+    border: 3px solid #cca300;
+    margin-top: -100px;
+    margin-left: 140px;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+}
+
+.opening-hour {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 10px;
+}  
+.opening-hour h2{
+    font-family: "Tangerine", cursive;
+    text-decoration: underline;
+    text-decoration-color: #cca300;
+    font-size: 40px;
+    margin: 10px 15px 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.opening-hour ul li {
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.opening-hour ul p{
+    color: #000;
+    margin-bottom: 0;
+    margin-left: -40px;
+    margin-right: -25px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.timings{
+    margin-left: -100px;
+    margin-right: -25px;
+    text-align: center;
+}
+
+.gallery .title{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.gallery-pictures-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+    transform:translateX(70%);
+    animation: scroll1 15s linear infinite;
+    overflow: hidden;
+}
+
+.gallery-pictures-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;	
+    transform:translateX(70%);
+     animation: scroll2 15s linear infinite;
+     overflow: hidden;
+}
+
+@keyframes scroll1 {
+    0%   { 
+    transform: translateX(70%); 		
+    }
+    100% {  
+    transform: translateX(-70%); 
+    }
+}
+
+@keyframes scroll2 {
+    0%   { 
+    transform: translateX(-70%); 		
+    }
+    100% { 
+    transform: translateX(70%); 
+    }
+}
+
+.review{
+    background: linear-gradient(rgba(177, 120, 63, 0.7),rgba(0,0,0,0.7));
+    overflow: hidden;
+}
+.review .title{
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    color: #fabd06; 
+    opacity: 1;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.review-slide{
+    margin: 2rem 0;
+}
+.review-item img{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+.review-item{
+    text-align: center;
+}
+.review-item p{
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    width: 80%;
+    margin: 1.5rem auto 1rem;
+    color: lightgray;
+    opacity: 0.9;
+}
+.review-item h3{
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.chef{
+    background: rgb(233, 231, 231);
+}
+.chef .title{
+    text-align: center;
+}
+.chef-pictures{
+    margin: 2rem 0;
+}
+.chef-img{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.chef-img img{
+    transition: all 0.5s ease;
+}
+.chef-img img:hover{
+    transform: scale(1.2,1.2);
+}
+.chef-over{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.6s ease-in-out 0.3s;
+}
+.chef-over p{
+    font-size: 30px;
+    color: #fabd06; 
+    text-transform: uppercase;
+    width: 70%;
+    text-align: center;
+    line-height: 1.7;
+}
+.chef-icons{
+    display: flex;
+}
+.chef-icons span{
+    background: darkblue;
+    margin: 0.5rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgrey;
+    transition: all 0.5s ease;
+}
+.chef-icons span:hover{
+    background: rgb(94, 2, 2);
+}
+.chef-img:hover .chef-over{
+    transform: translateY(0);
+}
+.chef-footer{
+    text-align: center;
+    padding: 0.8rem;
+}
+.chef-footer h2{
+    font-size: 40px;
+}
+
+.contact .title{
+    margin: 30px;
+    margin-top: -20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.footer-item .para-text{
+    margin-left: 57px;
+    margin-right: 40px;
+    line-height: 1.5;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+.footer-icons{
+    margin-left: 67px;
+    margin-top: 7px;
+}
+.footer-icons a{
+    text-align: center;
+    margin-left: 15px;
+    color: rgb(3, 3, 43);
+}
+
+footer{
+    background: rgb(27, 27, 27);
+    opacity: 0.8;
+}
+.copy-right .para-text{
+    color: yellow;
+    text-align: center;
+    font-size: 25px
+}
+
+@media screen and (min-width: 670px){
+    .menu-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 780px){
+    .header-title{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 1000px)
+{
+.box{
+    width: 70%;
+}
+
+.btn{
+    margin: 0 auto;
+}
+
+.navbar{
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-left: 50px;
+}
+
+.nav-bar{
+    display: none;
+}
+.nav-list{
+    flex : 1 0 auto;
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.nav-ul{
+    flex : 1 0 auto;
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-title{
+    flex: 100px 0 400px;
+}
+
+.nav-item{
+    padding : 0 30px;
+}
+.nav-title, .nav-link{
+    color : white;
+    opacity: 0.8;
+}
+
+
+.bg-navbar{
+    width: 100%;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    box-shadow: 0px 0px 25px 0px  rgba(31, 29, 29, 0.75);
+}
+
+.bg-navbar .nav-name{
+    color: red!important;
+}
+
+.bg-navbar .dot, .bg-navbar .nav-link{
+    color: black!important;
+}
+.nav-link{
+    font-size: 27px!important;
+    opacity: 0.75!important;
+    transition: all 0.5s ease!important;
+}
+.nav-link:hover{
+    color: #ff9900!important;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.chef-pictures{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+}
+
+}
+
+@media screen and (min-width: 1200px){
+    .menu-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+
+
